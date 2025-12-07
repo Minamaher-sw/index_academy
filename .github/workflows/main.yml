@@ -7,5 +7,7 @@ jobs:
   example-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
       - name: Run a one-line script
         run: echo "Hello, World!"
