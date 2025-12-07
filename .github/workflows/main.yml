@@ -11,3 +11,7 @@ jobs:
         uses: actions/checkout@v6
       - name: Run a one-line script
         run: echo "Hello, World!"
+      - name: List files in the repository
+        run: ls -la # List all files including hidden ones
+      - name: Display current directory
+        run: pwd
